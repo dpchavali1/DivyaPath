@@ -512,138 +512,132 @@ public class DatabaseSeeder {
      *             https://archive.org/details/AdityaHridayamMantra
      *             https://archive.org/details/VariousSuktam
      */
-    private static void backfillArchiveOrgUrls(DivyaPathDatabase db) {
-        // ── Aartis (PretrajSarkarKiAarti collection) ──
-        db.aartiDao().updateArchiveOrgUrlByTitle("Jai Ganesh Deva",
-                "https://archive.org/download/PretrajSarkarKiAarti/Jai-Ganesh-Deva.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Om Jai Shiv Omkara",
-                "https://archive.org/download/PretrajSarkarKiAarti/Jai-Shiv-Omkara.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Om Jai Jagdish Hare",
-                "https://archive.org/download/PretrajSarkarKiAarti/Om-Jai-Jagdish-Hare-Bijender-Chauhan.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Om Jai Lakshmi Mata",
-                "https://archive.org/download/PretrajSarkarKiAarti/Jai-Lakshmi-Mata.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Jai Ambe Gauri",
-                "https://archive.org/download/PretrajSarkarKiAarti/Jai%20Ambe%20Gauri-f.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Keeje Hanuman Lala Ki",
-                "https://archive.org/download/PretrajSarkarKiAarti/Aarti-Kije-Hanuman-Lala-Ki.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Kunj Bihari Ki",
-                "https://archive.org/download/PretrajSarkarKiAarti/Kunj-Vihari-Ki.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Jai Saraswati Mata",
-                "https://archive.org/download/PretrajSarkarKiAarti/Saraswati-Mata-Aarti.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Surya Dev Ki",
-                "https://archive.org/download/PretrajSarkarKiAarti/Surya%20Dev%20Ji%20Ki%20Aarti.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Shani Dev Ki",
-                "https://archive.org/download/PretrajSarkarKiAarti/Shanidev%20Aarti-Bijender-Chauhan.mp3");
-        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Shri Ram Ji Ki",
-                "https://archive.org/download/PretrajSarkarKiAarti/Ram%20Ji%20Ki.mp3");
+    private static final String GH_AUDIO = "https://github.com/dpchavali1/DivyaPath/releases/download/v1.0-audio/";
 
-        // ── Chalisas (godchalisa collection) ──
+    private static void backfillArchiveOrgUrls(DivyaPathDatabase db) {
+        // ── Aartis ──
+        db.aartiDao().updateArchiveOrgUrlByTitle("Jai Ganesh Deva",
+                GH_AUDIO + "jai_ganesh_deva.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Om Jai Shiv Omkara",
+                GH_AUDIO + "om_jai_shiv_omkara.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Om Jai Jagdish Hare",
+                GH_AUDIO + "om_jai_jagdish_hare.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Om Jai Lakshmi Mata",
+                GH_AUDIO + "om_jai_lakshmi_mata.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Jai Ambe Gauri",
+                GH_AUDIO + "jai_ambe_gauri.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Keeje Hanuman Lala Ki",
+                GH_AUDIO + "aarti_hanuman_lala_ki.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Kunj Bihari Ki",
+                GH_AUDIO + "aarti_kunj_bihari_ki.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Jai Saraswati Mata",
+                GH_AUDIO + "jai_saraswati_mata.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Surya Dev Ki",
+                GH_AUDIO + "aarti_surya_dev_ki.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Shani Dev Ki",
+                GH_AUDIO + "aarti_shani_dev_ki.mp3");
+        db.aartiDao().updateArchiveOrgUrlByTitle("Aarti Shri Ram Ji Ki",
+                GH_AUDIO + "aarti_shri_ram_ji_ki.mp3");
+
+        // ── Chalisas ──
         db.chalisaDao().updateArchiveOrgUrlByTitle("Hanuman Chalisa",
-                "https://archive.org/download/godchalisa/Hanuman%20Chalisa%20akchay.mp3");
+                GH_AUDIO + "hanuman_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Ganesh Chalisa",
-                "https://archive.org/download/godchalisa/Ganesh%20Chalisa%20Sikha.mp3");
+                GH_AUDIO + "ganesh_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Durga Chalisa",
-                "https://archive.org/download/godchalisa/Durga%20chalisa.mp3");
+                GH_AUDIO + "durga_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Shiv Chalisa",
-                "https://archive.org/download/godchalisa/Shiv%20Chalisa%20Ravindra%20Jain.mp3");
+                GH_AUDIO + "shiv_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Lakshmi Chalisa",
-                "https://archive.org/download/godchalisa/Lakshmi%20Ji%20Chalisa.mp3");
+                GH_AUDIO + "lakshmi_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Saraswati Chalisa",
-                "https://archive.org/download/godchalisa/Saraswati%20Mata%20Chalisa%20female.mp3");
+                GH_AUDIO + "saraswati_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Ram Chalisa",
-                "https://archive.org/download/godchalisa/Ram%20Chalisa.mp3");
+                GH_AUDIO + "ram_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Shani Chalisa",
-                "https://archive.org/download/godchalisa/Shanidev%20Chalisa%20Ravindra%20Jain.mp3");
+                GH_AUDIO + "shani_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Surya Chalisa",
-                "https://archive.org/download/godchalisa/Surya%20Chalisa.mp3");
+                GH_AUDIO + "surya_chalisa.mp3");
         db.chalisaDao().updateArchiveOrgUrlByTitle("Vishnu Chalisa",
-                "https://archive.org/download/godchalisa/Vishnu%20Chalisa.mp3");
+                GH_AUDIO + "vishnu_chalisa.mp3");
 
         // ── Mantras ──
-        // Ganesh mantras
         db.mantraDao().updateArchiveOrgUrlByTitle("Ganesh Beej Mantra",
-                "https://archive.org/download/MantrasFromVedasSlokas/Ganesh%20Mantra.mp3");
+                GH_AUDIO + "ganesh_beej_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Vakratunda Mahakaya",
-                "https://archive.org/download/ShlokaAndBhaktigeetGanesh-MeenaTapaswi/Vakratunda_Mahakaya.mp3");
-        // Shiva mantras
+                GH_AUDIO + "vakratunda_mahakaya.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Om Namah Shivaya",
-                "https://archive.org/download/HinduSlokasAndMantras/Om%20Namah%20Shivaya.mp3");
+                GH_AUDIO + "om_namah_shivaya.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Mahamrityunjaya Mantra",
-                "https://archive.org/download/MantrasFromVedasSlokas/Shiva%20Mahamrityunjaya%20Mantra.mp3");
-        // Gayatri & Shanti
+                GH_AUDIO + "mahamrityunjaya_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Gayatri Mantra",
-                "https://archive.org/download/MantrasFromVedasSlokas/Gayatri%20Mantra.mp3");
+                GH_AUDIO + "gayatri_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Shanti Mantra",
-                "https://cs1.mp3.pm/listen/242468706/Y0pkNGlpWWt5TStRcFZ2U09ma1BTa1pUUXRseFEzTjlaaGErQkhxRitiai9sMnN2NUJkVXEwNXF5MWZLQVFzSE9Xc1hhWUsyVDlCMTVyNEs0Nm1NL21MSmsvVzNrTFJMcG8veHE3SUJmRlhvQ0U0aTVMWk5BNjEzejJQVmVTbG4/Sanskrit_-_OM_SARVE_BHAVANTU_SUKHINAH_SARVE_SANTU_NIRAMAYAH_SARVE_BHADRANI_PASHYANTU_MA_KASCHID_DUKH_(mp3.pm).mp3");
-        // Lakshmi & Saraswati mantras
+                GH_AUDIO + "shanti_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Lakshmi Beej Mantra",
-                "https://cs1.mp3.pm/listen/171567378/Y0pkNGlpWWt5TStRcFZ2U09ma1BTa1pUUXRseFEzTjlaaGErQkhxRitiaUxOYXpUVGxEcTZKRjdzSjlQejJBQmpUWEhkcGZQdk9wdUk0SnFxYnBQVDJTS0h3R2ZJZ1ZLcW9WMHVUdDYwRTVmamNkVWhualJrZjhzSTJmcUZtQ2I/Pooja_-_Maa_Lakshmi_Beej_Mantra_(mp3.pm).mp3");
+                GH_AUDIO + "lakshmi_beej_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Saraswati Beej Mantra",
-                "https://cs1.mp3.pm/listen/220498140/Y0pkNGlpWWt5TStRcFZ2U09ma1BTa1pUUXRseFEzTjlaaGErQkhxRitiZ2RQRm1JK1R5NVpWemZXUUVET3JpYmp1bGF4eXM4SzlaK0tuZmtNKzRlRy9RQkppbGZ4Tm5ZeVZCTXpXNG1GR05XM25ScHRQcHFKdzRrSmV1OHZXSEs/TaTTu_-_Saraswati_Beej_Manta_108_Times_(mp3.pm).mp3");
-        // Navagraha mantras
+                GH_AUDIO + "saraswati_beej_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Surya Mantra",
-                "https://cs1.mp3.pm/listen/146668419/Y0pkNGlpWWt5TStRcFZ2U09ma1BTa1pUUXRseFEzTjlaaGErQkhxRitialRuSnd6ZzhsWW9vZGFJSERFZmZmSEluUUU4eko1L01XOTNHd1YwYUZUT0lGbXA1YnJQYXYrNHVnWDdCN1RCUDRNSGpPRktqbXNCNXhLOThtU2Y5dHc/Bidzha_mantra_Sure_-_Om_hraam_hreem_hraum_sah_suryaaya_namah_(mp3.pm).mp3");
-        // Hare Krishna Mahamantra
+                GH_AUDIO + "surya_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Hare Krishna Mahamantra",
-                "https://archive.org/download/HinduSlokasAndMantras/Hare%20Krishna%20Maha%20Mantra.mp3");
-        // Durga Beej Mantra
+                GH_AUDIO + "hare_krishna_mahamantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Durga Beej Mantra",
-                "https://archive.org/download/MantrasFromVedasSlokas/Durga%20Mantra%20%28Om%20Dum%20Durgayei%20Namaha%29.mp3");
-        // Navgraha mantras
+                GH_AUDIO + "durga_beej_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Shani Mantra",
-                "https://cs1.mp3.pm/listen/235934759/Y0pkNGlpWWt5TStRcFZ2U09ma1BTa1pUUXRseFEzTjlaaGErQkhxRitiaERsbmJLMU9OT244ampyREZhNUpldTNDYWErMGdmT0xFVXh4dVo2NkdsRnJTZkFPbU9iZS9Qc3FQQ0cya0locVB2ZGhQcHVDM2xBOWR1dE9ONkZGQk8/Arushi_Bajpai_-_Shani_Mantra_(mp3.pm).mp3");
+                GH_AUDIO + "shani_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Chandra Mantra",
-                "https://cs1.mp3.pm/listen/246502509/Y0pkNGlpWWt5TStRcFZ2U09ma1BTa1pUUXRseFEzTjlaaGErQkhxRitiaXNBLzVRRW1PcGJtOFFKc1draTRwWWhGeFRxM3gzL0lwdlFDTWNzUDF5ZzNQZDM3TFY0Qm5USURJUWlCME5zb1JtdHZVRDUyS1ZpZVVwZWFjdXVJVSs/Sonea_Madhv_-_Chandra_Beej_Mantra_Om_Shraam_Shreem_Shraum_Sah_Chandramase_Namah_(mp3.pm).mp3");
+                GH_AUDIO + "chandra_beej_Mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Mangal Mantra",
-                "https://archive.org/download/mangal-beej-mantra-108-times/mangal-beej-mantra-108-times.mp3");
+                GH_AUDIO + "mangal_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Guru Brihaspati Mantra",
-                "https://archive.org/download/BrihaspateAtana/5.%20Brihaspate%20%28Atana%29.mp3");
+                GH_AUDIO + "guru_brihaspati_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Rahu Mantra",
-                "https://archive.org/download/rahu-beej-mantra/rahu-beej-mantra.mp3");
+                GH_AUDIO + "rahu_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Ketu Mantra",
-                "https://archive.org/download/ketu-beej/ketu-beej.mp3");
+                GH_AUDIO + "ketu_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Budh Mantra",
-                "https://cs1.mp3.pm/listen/196028637/Y0pkNGlpWWt5TStRcFZ2U09ma1BTa1pUUXRseFEzTjlaaGErQkhxRitiaDZOV0hmV0MzNmRMdmNkdFJuMThHTEJOcDhpcmp1WWM2NUwvNFg3cUJ2MllwMmRjY1AvMm00eHdGeTRoNDFQWTBLNjRUY3UrQlI2akhtdDBEMTFhbnE/Dinesh_Arjuna_-_Om_Bram_Breem_Broum_Sah_Budhaya_Namah_Budh_Beej_Mantra_108_Times_in_5_Times_(mp3.pm).mp3");
+                GH_AUDIO + "budh_mantra.mp3");
         db.mantraDao().updateArchiveOrgUrlByTitle("Shri Ram Jai Ram Mantra",
-                "https://archive.org/download/RamMantraChantingSriRamJaiRam128k/Ram_Mantra_Chanting_%7C_Sri_Ram_Jai_Ram%28128k%29.mp3");
+                GH_AUDIO + "shri_ram_jai_ram.mp3");
 
         // ── Bhajans ──
         db.bhajanDao().updateArchiveOrgUrlByTitle("Achyutam Keshavam",
-                "https://archive.org/download/MantrasFromVedasSlokas/Achyutam%20Keshavam.mp3");
+                GH_AUDIO + "achyutam_keshavam.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Hare Krishna Hare Rama",
-                "https://archive.org/download/HindiBhajans-anoopJalotaJi/HareRamaHareKrishna.mp3");
+                GH_AUDIO + "hare_krishna_hare_rama.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Ya Devi Sarvabhuteshu",
-                "https://archive.org/download/BhakthiSongs/Ya%20devi%20sarvabhuteshu.mp3");
+                GH_AUDIO + "ya_devi_sarvabhuteshu.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Shri Ramchandra Kripalu",
-                "https://archive.org/download/HindiBhajans-anoopJalotaJi/ShriRamchandraKripaluBhajMan.mp3");
+                GH_AUDIO + "shri_ramchandra_kripalu.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Ram Siya Ram",
-                "https://archive.org/download/ram-siya-ram-sachet-tandon-128-kbps/Ram%20Siya%20Ram%20-%20Sachet%20Tandon%20128%20Kbps.mp3");
+                GH_AUDIO + "ram_siya_ram.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Govind Bolo Hari Gopal Bolo",
-                "https://archive.org/download/09.-govind-bolo-s-wadekar-20.55/09.Govind%20Bolo%20%28S%20Wadekar%29%2020.55.mp3");
+                GH_AUDIO + "govind_bolo_hari_gopal.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Jai Ambe Gauri",
-                "https://archive.org/download/jai_ambe_gauri_aarti/jai_ambe_gauri_aarti.mp3");
+                GH_AUDIO + "jai_ambe_gauri_bhajan.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Bam Bam Bhole",
-                "https://archive.org/download/BAMBAMBHOLESwarRamjiKhadRaKrishnaGurungWww.lovenepal.net/BAM%20BAM%20BHOLE%20swar%20ramji%20khad%20ra%20krishna%20gurung%20www.lovenepal.net.mp3");
+                GH_AUDIO + "bam_bam_bhole.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Dukh Mein Sumiran Sab Karein",
-                "https://archive.org/download/dukh-me-sumiran-sab-kare/Dukh%20me%20sumiran%20sab%20kare.mp3");
+                GH_AUDIO + "dukh_mein_sumiran.mp3");
         db.bhajanDao().updateArchiveOrgUrlByTitle("Mere To Giridhar Gopal",
-                "https://archive.org/download/Meera-soundtrack/01%20Mere%20To%20Giridhar%20Gopal.mp3");
+                GH_AUDIO + "mere_to_giridhar_gopal.mp3");
 
         // ── Stotras ──
         db.stotraDao().updateArchiveOrgUrlByTitle("Shiv Tandav Stotram",
-                "https://archive.org/download/shiv-tandav-shiv-tandav-stotram/Shiv%20Tandav%20-%20Shiv%20Tandav%20Stotram.mp3");
+                GH_AUDIO + "shiv_tandav_stotram.mp3");
         db.stotraDao().updateArchiveOrgUrlByTitle("Mahishasura Mardini Stotram",
-                "https://archive.org/download/MahishasuraMardiniStotram/Mahishasura%20Mardini%20Stotram.mp3");
+                GH_AUDIO + "mahishasura_mardini.mp3");
         db.stotraDao().updateArchiveOrgUrlByTitle("Vishnu Sahasranama",
-                "https://archive.org/download/VishnuSahasranamam_MSS/Vishnu%20Sahasranamam.mp3");
+                GH_AUDIO + "vishnu_sahasranama.mp3");
         db.stotraDao().updateArchiveOrgUrlByTitle("Lalita Sahasranama",
-                "https://archive.org/download/SriLalithaSahasranamam/Sri%20Lalitha%20Sahasranamam.mp3");
+                GH_AUDIO + "lalita_sahasranama.mp3");
         db.stotraDao().updateArchiveOrgUrlByTitle("Aditya Hridayam",
-                "https://archive.org/download/AdityaHridayamMantra/Aditya%20Hrudayam.mp3");
+                GH_AUDIO + "aditya_hridayam.mp3");
         db.stotraDao().updateArchiveOrgUrlByTitle("Purusha Suktam",
-                "https://archive.org/download/VariousSuktam/006-purushasuktam.mp3");
+                GH_AUDIO + "purusha_suktam.mp3");
         db.stotraDao().updateArchiveOrgUrlByTitle("Sri Suktam",
-                "https://archive.org/download/VariousSuktam/007-srisuktam.mp3");
+                GH_AUDIO + "sri_suktam.mp3");
 
         // Backfill localAssetName for aartis
         db.aartiDao().updateLocalAssetNameByTitle("Jai Ganesh Deva", "raw:aarti_jai_ganesh_deva");
