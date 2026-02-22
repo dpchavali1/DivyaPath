@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Find Auspicious Muhurat" android:textSize="18sp"
+            android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:text="Select an activity to find the best timing"
+            android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+        <com.google.android.material.chip.ChipGroup android:id="@+id/chip_activity_type"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" app:singleSelection="true"/>
+        <com.google.android.material.card.MaterialCardView android:id="@+id/card_muhurat_result"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" app:cardCornerRadius="16dp" app:cardElevation="2dp" android:visibility="gone">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView android:id="@+id/tv_muhurat_title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="16sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tv_muhurat_time" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:textSize="20sp" android:textColor="@color/success_green"
+                    android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tv_muhurat_desc" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:textSize="14sp" android:textColor="?attr/colorOnSurface"
+                    android:lineSpacingExtra="4dp"/>
+                <TextView android:id="@+id/tv_muhurat_next" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="140dp" android:layout_height="wrap_content"
+    android:layout_marginEnd="12dp" app:cardCornerRadius="12dp" app:cardElevation="2dp" app:strokeWidth="0dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="8dp" android:gravity="center">
+        <ImageView android:id="@+id/iv_aarti_deity" android:layout_width="60dp" android:layout_height="60dp"
+            android:src="@drawable/ic_om_symbol" android:scaleType="centerCrop"
+            android:background="@drawable/bg_circle_saffron" android:clipToOutline="true"
+            android:contentDescription="Deity"/>
+        <TextView android:id="@+id/tv_aarti_title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:textSize="13sp" android:textColor="?attr/colorOnSurface"
+            android:fontFamily="sans-serif-medium" android:gravity="center" android:maxLines="2" android:ellipsize="end"/>
+        <TextView android:id="@+id/tv_aarti_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textSize="11sp" android:textColor="?attr/colorOnSurfaceVariant" android:gravity="center" android:maxLines="1"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

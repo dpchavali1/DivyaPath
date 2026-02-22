@@ -1,0 +1,28 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Background circle -->
+    <path
+        android:fillColor="#AD1457"
+        android:pathData="M24,2C11.85,2 2,11.85 2,24s9.85,22 22,22 22,-9.85 22,-22S36.15,2 24,2z"/>
+    <!-- Trishul (trident) center -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M23,38V16h2v22h-2z"/>
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M24,16c0,-3 -3,-5 -5,-7l1,-1c2,1.5 4,4 4,4s2,-2.5 4,-4l1,1c-2,2 -5,4 -5,7z"/>
+    <!-- Shield / Symbolic representation -->
+    <path
+        android:fillColor="#F48FB1"
+        android:pathData="M24,20l-8,4v6c0,4 3.5,7.5 8,9c4.5,-1.5 8,-5 8,-9v-6l-8,-4z"/>
+    <path
+        android:fillColor="#AD1457"
+        android:pathData="M24,23l-5,2.5v4c0,2.5 2,5 5,6c3,-1 5,-3.5 5,-6v-4l-5,-2.5z"/>
+    <!-- Lion (vehicle) paw mark -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M24,28m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+</vector>

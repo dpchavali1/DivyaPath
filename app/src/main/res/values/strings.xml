@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DivyaPath</string>
+    <string name="app_name_hindi">दिव्यपथ</string>
+    <string name="app_tagline">Your Spiritual Companion</string>
+    <string name="app_tagline_hindi">आपका आध्यात्मिक साथी</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_aarti">Aarti</string>
+    <string name="nav_mantra">Mantra</string>
+    <string name="nav_panchang">Panchang</string>
+    <string name="nav_more">More</string>
+
+    <!-- Greetings -->
+    <string name="greeting_morning">Good Morning</string>
+    <string name="greeting_afternoon">Good Afternoon</string>
+    <string name="greeting_evening">Good Evening</string>
+    <string name="greeting_night">Shubh Ratri</string>
+    <string name="greeting_default">Namaste</string>
+    <string name="greeting_format">%1$s %2$s 🙏</string>
+    <string name="greeting_user_default">Bhakt</string>
+
+    <!-- Home Screen -->
+    <string name="todays_panchang">Today\'s Panchang</string>
+    <string name="todays_deity">Today\'s Deity</string>
+    <string name="daily_shloka">Daily Shloka</string>
+    <string name="todays_aartis">Today\'s Aartis</string>
+    <string name="quick_access">Quick Access</string>
+    <string name="view_all">View All</string>
+    <string name="btn_aarti">Aarti</string>
+    <string name="btn_chalisa">Chalisa</string>
+    <string name="btn_mantra">Mantra</string>
+    <string name="btn_calendar">Calendar</string>
+
+    <!-- Panchang Labels -->
+    <string name="tithi">Tithi</string>
+    <string name="nakshatra">Nakshatra</string>
+    <string name="yoga">Yoga</string>
+    <string name="karana">Karana</string>
+    <string name="vara">Vara (Day)</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="moonrise">Moonrise</string>
+    <string name="moonset">Moonset</string>
+    <string name="rahukaal">Rahu Kaal</string>
+    <string name="gulikaal">Guli Kaal</string>
+    <string name="yamghant">Yam Ghant</string>
+    <string name="abhijit_muhurat">Abhijit Muhurat</string>
+
+    <!-- Days and Deities -->
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <!-- Deity Names -->
+    <string name="deity_shiva">Lord Shiva</string>
+    <string name="deity_shiva_hindi">भगवान शिव</string>
+    <string name="deity_hanuman">Lord Hanuman</string>
+    <string name="deity_hanuman_hindi">हनुमान जी</string>
+    <string name="deity_ganesha">Lord Ganesha</string>
+    <string name="deity_ganesha_hindi">श्री गणेश</string>
+    <string name="deity_vishnu">Lord Vishnu</string>
+    <string name="deity_vishnu_hindi">भगवान विष्णु</string>
+    <string name="deity_lakshmi">Goddess Lakshmi</string>
+    <string name="deity_lakshmi_hindi">माँ लक्ष्मी</string>
+    <string name="deity_saturn">Lord Shani Dev</string>
+    <string name="deity_saturn_hindi">शनि देव</string>
+    <string name="deity_surya">Lord Surya</string>
+    <string name="deity_surya_hindi">सूर्य देव</string>
+    <string name="deity_durga">Goddess Durga</string>
+    <string name="deity_durga_hindi">माँ दुर्गा</string>
+    <string name="deity_krishna">Lord Krishna</string>
+    <string name="deity_krishna_hindi">श्री कृष्ण</string>
+    <string name="deity_saraswati">Goddess Saraswati</string>
+    <string name="deity_saraswati_hindi">माँ सरस्वती</string>
+    <string name="deity_rama">Lord Rama</string>
+    <string name="deity_rama_hindi">श्री राम</string>
+
+    <!-- Aarti Section -->
+    <string name="aarti_section_title">Aarti Sangrah</string>
+    <string name="aarti_section_subtitle">आरती संग्रह</string>
+    <string name="font_size">Font Size</string>
+    <string name="share">Share</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="bookmarked">Bookmarked</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
+
+    <!-- Chalisa Section -->
+    <string name="chalisa_section_title">Chalisa Sangrah</string>
+    <string name="chalisa_section_subtitle">चालीसा संग्रह</string>
+    <string name="auto_scroll">Auto Scroll</string>
+    <string name="doha">Doha</string>
+    <string name="chaupai">Chaupai</string>
+
+    <!-- Mantra Section -->
+    <string name="mantra_section_title">Mantra Jaap</string>
+    <string name="mantra_section_subtitle">मंत्र जाप</string>
+    <string name="mala_counter">Mala Counter</string>
+    <string name="mala_count_format">%1$d / 108</string>
+    <string name="mala_complete">Mala Complete! 🎉</string>
+    <string name="reset_counter">Reset Counter</string>
+    <string name="sanskrit">Sanskrit</string>
+    <string name="meaning">Meaning</string>
+    <string name="benefits">Benefits</string>
+    <string name="transliteration">Transliteration</string>
+
+    <!-- Mantra Categories -->
+    <string name="cat_ganesh_mantras">Ganesh Mantras</string>
+    <string name="cat_shiva_mantras">Shiva Mantras</string>
+    <string name="cat_vedic_mantras">Vedic Mantras</string>
+    <string name="cat_beej_mantras">Beej Mantras</string>
+    <string name="cat_navgraha_mantras">Navgraha Mantras</string>
+
+    <!-- Panchang -->
+    <string name="panchang_title">Panchang</string>
+    <string name="panchang_subtitle">पंचांग</string>
+    <string name="monthly_calendar">Monthly Calendar</string>
+    <string name="festivals_this_month">Festivals This Month</string>
+    <string name="shubh_timing">Shubh Timing</string>
+    <string name="ashubh_timing">Ashubh Timing</string>
+
+    <!-- Temple Darshan -->
+    <string name="darshan_title">Temple Darshan</string>
+    <string name="darshan_subtitle">मंदिर दर्शन</string>
+    <string name="live_darshan">Live Darshan</string>
+    <string name="darshan_timings">Darshan Timings</string>
+    <string name="plan_visit">Plan Visit</string>
+    <string name="status_open">Open</string>
+    <string name="status_closed">Closed</string>
+
+    <!-- Store -->
+    <string name="store_title">Devotional Store</string>
+    <string name="store_subtitle">पूजा सामग्री</string>
+    <string name="buy_on_amazon">Buy on Amazon</string>
+    <string name="category_incense">Incense</string>
+    <string name="category_diyas">Diyas</string>
+    <string name="category_idols">Idols</string>
+    <string name="category_puja_thali">Puja Thali</string>
+    <string name="category_books">Books</string>
+    <string name="category_rudraksha">Rudraksha</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_user_name">Your Name</string>
+    <string name="settings_user_name_hint">Enter your name</string>
+    <string name="settings_language">Default Language</string>
+    <string name="settings_morning_notification">Morning Notification</string>
+    <string name="settings_evening_notification">Evening Notification</string>
+    <string name="settings_notification_time">Notification Time</string>
+    <string name="settings_font_size">Font Size</string>
+    <string name="settings_theme">Theme</string>
+    <string name="settings_profile">Profile</string>
+    <string name="settings_devotional_voice">Devotional Voice</string>
+    <string name="settings_voice_female">Female Voice (Clarified)</string>
+    <string name="settings_voice_male">Male Voice (Deep/Resonant)</string>
+    <string name="settings_aarti_playback">Aarti Playback</string>
+    <string name="settings_playback_auto">Auto (Sing if available)</string>
+    <string name="settings_playback_sing">Sing (Audio only)</string>
+    <string name="settings_playback_read">Read (Voice TTS)</string>
+    <string name="settings_audio_quality">Audio Quality</string>
+    <string name="settings_quality_low">Low (saves data)</string>
+    <string name="settings_quality_medium">Medium (recommended)</string>
+    <string name="settings_quality_high">High (best quality)</string>
+    <string name="settings_reading_font_size">Reading Font Size</string>
+    <string name="settings_font_preview_text">Om Namah Shivaya</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_daily_morning_reminder">Daily Morning Reminder</string>
+    <string name="settings_festival_evening_alerts">Festival and Evening Alerts</string>
+    <string name="settings_panchang_location">Panchang Location</string>
+    <string name="settings_panchang_location_hint">Used for accurate sunrise, sunset and muhurat timings</string>
+    <string name="settings_location_city">City</string>
+    <string name="settings_location_gps">GPS</string>
+    <string name="settings_location_manual">Manual</string>
+    <string name="settings_apply">Apply</string>
+    <string name="settings_timezone_display">Timezone Display</string>
+    <string name="settings_timezone_local">Local</string>
+    <string name="settings_timezone_ist">IST</string>
+    <string name="settings_timezone_device">Device</string>
+    <string name="settings_location_preview_default">New Delhi, IN</string>
+    <string name="settings_timezone_preview_default">Asia/Kolkata (IST)</string>
+    <string name="settings_preview_sunrise_default">Sunrise: --</string>
+    <string name="settings_preview_sunset_default">Sunset: --</string>
+    <string name="settings_preview_rahukaal_default">Rahukaal: --</string>
+    <string name="settings_about_section">About</string>
+    <string name="settings_rate_play_store">Rate Us on Play Store</string>
+    <string name="settings_share_with_friends">Share App with Friends</string>
+    <string name="settings_footer_text">DivyaPath v2.0\nMade with devotion</string>
+    <string name="settings_about">About DivyaPath</string>
+    <string name="settings_rate">Rate Us</string>
+    <string name="settings_share_app">Share App</string>
+    <string name="settings_privacy">Privacy Policy</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_saffron">Saffron</string>
+
+    <!-- AdMob Production IDs -->
+    <string name="admob_banner_id">ca-app-pub-4962910048695842/2672343176</string>
+    <string name="admob_interstitial_id">ca-app-pub-4962910048695842/2672343176</string>
+    <string name="admob_rewarded_id">ca-app-pub-4962910048695842/2672343176</string>
+    <string name="admob_native_id">ca-app-pub-4962910048695842/2672343176</string>
+
+    <!-- Common -->
+    <string name="loading">Loading…</string>
+    <string name="error_loading">Unable to load content</string>
+    <string name="retry">Retry</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="om_symbol">ॐ</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Flame -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M12,2C12,2 9,6 9,8.5C9,10.5 10.3,12 12,12C13.7,12 15,10.5 15,8.5C15,6 12,2 12,2Z" />
+    <!-- Inner flame -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:pathData="M12,5C12,5 10.5,7.5 10.5,9C10.5,10 11.2,10.5 12,10.5C12.8,10.5 13.5,10 13.5,9C13.5,7.5 12,5 12,5Z" />
+    <!-- Wick -->
+    <path
+        android:fillColor="#795548"
+        android:pathData="M11.5,11L12.5,11L12.5,13L11.5,13Z" />
+    <!-- Diya body -->
+    <path
+        android:fillColor="#D84315"
+        android:pathData="M7,14C7,14 6,17 6,18C6,19.5 8,21 12,21C16,21 18,19.5 18,18C18,17 17,14 17,14Z" />
+    <!-- Diya oil -->
+    <path
+        android:fillColor="#FFB74D"
+        android:pathData="M8,14.5C8,14.5 7.5,16 7.5,17C7.5,18 9,19 12,19C15,19 16.5,18 16.5,17C16.5,16 16,14.5 16,14.5Z" />
+</vector>

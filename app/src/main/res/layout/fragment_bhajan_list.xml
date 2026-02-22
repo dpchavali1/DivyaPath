@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="?attr/colorSurface">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar_bhajan"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        app:title="Bhajan" app:titleTextColor="@color/white"
+        android:background="@color/saffron_primary" app:navigationIcon="@drawable/ic_back" app:navigationIconTint="@color/white"/>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tab_bhajan_categories"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/saffron_primary"
+        app:tabMode="scrollable"
+        app:tabGravity="start"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="3dp"
+        app:tabRippleColor="@color/white"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_bhajan_list"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:padding="12dp" android:clipToPadding="false"/>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ad-services-config>
+    <topics allowAllTopics="false" />
+    <attribution allowAllAttributionAccess="false" />
+    <custom-audiences allowAllCustomAudiencesAccess="false" />
+    <app-install allowAllAppInstallAccess="false" />
+</ad-services-config>

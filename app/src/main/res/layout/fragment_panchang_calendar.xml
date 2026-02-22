@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp">
+    <CalendarView android:id="@+id/calendar_view"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <com.google.android.material.card.MaterialCardView android:id="@+id/card_selected_day"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" app:cardCornerRadius="16dp" app:cardElevation="2dp" android:visibility="gone">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+            <TextView android:id="@+id/tv_selected_date" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="16sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+            <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:columnCount="2" android:layout_marginTop="8dp" android:useDefaultMargins="true">
+                <TextView android:text="Tithi" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                <TextView android:id="@+id/tv_cal_tithi" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                <TextView android:text="Nakshatra" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                <TextView android:id="@+id/tv_cal_nakshatra" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                <TextView android:text="Rahukaal" android:textSize="14sp" android:textColor="@color/error_red"/>
+                <TextView android:id="@+id/tv_cal_rahukaal" android:textSize="14sp" android:textColor="@color/error_red" android:fontFamily="sans-serif-medium"/>
+            </GridLayout>
+            <TextView android:id="@+id/tv_cal_festival" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:textSize="14sp" android:textColor="@color/saffron_primary"
+                android:fontFamily="sans-serif-medium" android:visibility="gone"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

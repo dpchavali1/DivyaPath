@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp" app:cardCornerRadius="12dp" app:cardElevation="2dp" app:strokeWidth="0dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+            <View android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/bg_circle_saffron"/>
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                <TextView android:id="@+id/tv_temple_name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="16sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tv_temple_name_hindi" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="13sp" android:textColor="@color/saffron_primary"/>
+                <TextView android:id="@+id/tv_temple_location" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="12sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+            </LinearLayout>
+            <com.google.android.material.chip.Chip android:id="@+id/chip_visited"
+                android:layout_width="wrap_content" android:layout_height="28dp"
+                android:text="Visited" android:textSize="10sp"
+                app:chipBackgroundColor="@color/abhijit_green" android:textColor="@color/white"
+                app:chipMinHeight="24dp" android:visibility="gone"
+                android:layout_marginEnd="4dp"/>
+            <com.google.android.material.chip.Chip android:id="@+id/chip_live"
+                android:layout_width="wrap_content" android:layout_height="32dp"
+                android:text="LIVE" android:textSize="11sp"
+                app:chipBackgroundColor="@color/error_red" android:textColor="@color/white"
+                app:chipMinHeight="28dp" android:visibility="gone"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tv_temple_timings" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:textSize="13sp" android:textColor="?attr/colorOnSurfaceVariant"
+            android:drawablePadding="4dp"/>
+        <TextView android:id="@+id/tv_temple_desc" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:textSize="13sp" android:textColor="?attr/colorOnSurface"
+            android:maxLines="2" android:ellipsize="end"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btn_watch_live"
+            android:layout_width="wrap_content" android:layout_height="36dp"
+            android:layout_marginTop="8dp" android:text="Watch Live"
+            android:textSize="12sp" android:backgroundTint="@color/saffron_primary" android:visibility="gone"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

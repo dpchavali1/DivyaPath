@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar_bhajan_detail"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back" android:background="@color/saffron_primary"
+            app:navigationIconTint="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingBottom="72dp" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <ImageView android:id="@+id/iv_bhajan_deity"
+                android:layout_width="match_parent" android:layout_height="200dp"
+                android:scaleType="centerCrop" android:src="@drawable/ic_om_symbol"
+                android:background="@drawable/bg_circle_saffron"
+                android:contentDescription="Deity image"/>
+
+            <TextView android:id="@+id/tv_bhajan_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" android:textSize="22sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+
+            <TextView android:id="@+id/tv_bhajan_detail_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" android:textSize="16sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:orientation="horizontal" android:gravity="center_vertical">
+                <ImageButton android:id="@+id/btn_font_decrease_bhajan" android:layout_width="36dp" android:layout_height="36dp"
+                    android:src="@drawable/ic_font_decrease" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Decrease font"/>
+                <ImageButton android:id="@+id/btn_font_increase_bhajan" android:layout_width="36dp" android:layout_height="36dp"
+                    android:src="@drawable/ic_font_increase" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Increase font"
+                    android:layout_marginStart="8dp"/>
+                <ImageButton android:id="@+id/btn_share_bhajan" android:layout_width="36dp" android:layout_height="36dp"
+                    android:src="@drawable/ic_share" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="Share"
+                    android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Lyrics (Hindi)" android:textSize="14sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:id="@+id/tv_bhajan_lyrics_hindi" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:textSize="18sp" android:lineSpacingExtra="6dp"
+                        android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Lyrics (English)" android:textSize="14sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:id="@+id/tv_bhajan_lyrics_english" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:textSize="16sp" android:lineSpacingExtra="4dp"
+                        android:textColor="?attr/colorOnSurfaceVariant"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Audio player bar at bottom -->
+    <com.google.android.material.card.MaterialCardView android:id="@+id/audio_player_bar_bhajan"
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:layout_gravity="bottom" android:layout_margin="8dp"
+        app:cardCornerRadius="28dp" app:cardElevation="6dp" app:cardBackgroundColor="@color/saffron_primary">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:gravity="center_vertical" android:paddingHorizontal="16dp">
+            <ImageButton android:id="@+id/btn_play_pause_bhajan" android:layout_width="40dp" android:layout_height="40dp"
+                android:src="@drawable/ic_play" android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Play" app:tint="@color/white"/>
+            <SeekBar android:id="@+id/seekbar_bhajan" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginHorizontal="8dp"
+                android:progressTint="@color/white" android:thumbTint="@color/gold_accent"/>
+            <TextView android:id="@+id/tv_duration_bhajan" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="12sp" android:text="0:00"/>
+            <TextView android:id="@+id/btn_speed_bhajan" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" android:text="1x" android:textColor="@color/gold_accent"
+                android:textSize="12sp" android:fontFamily="sans-serif-medium" android:padding="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

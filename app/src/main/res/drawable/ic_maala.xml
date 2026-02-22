@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Mala circle outline (prayer beads) -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#795548"
+        android:strokeWidth="0.5"
+        android:pathData="M12,3A9,9 0,1 1,12 21A9,9 0,1 1,12 3Z" />
+    <!-- Beads around the circle -->
+    <path android:fillColor="#D84315" android:pathData="M12,2.5m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+    <path android:fillColor="#8D6E63" android:pathData="M15.5,3.3m-1.1,0a1.1,1.1 0,1 1,2.2 0a1.1,1.1 0,1 1,-2.2 0" />
+    <path android:fillColor="#D84315" android:pathData="M18.2,5.5m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+    <path android:fillColor="#8D6E63" android:pathData="M19.8,8.5m-1.1,0a1.1,1.1 0,1 1,2.2 0a1.1,1.1 0,1 1,-2.2 0" />
+    <path android:fillColor="#D84315" android:pathData="M20.2,12m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+    <path android:fillColor="#8D6E63" android:pathData="M19.5,15.5m-1.1,0a1.1,1.1 0,1 1,2.2 0a1.1,1.1 0,1 1,-2.2 0" />
+    <path android:fillColor="#D84315" android:pathData="M17.5,18.2m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+    <path android:fillColor="#8D6E63" android:pathData="M14.8,20m-1.1,0a1.1,1.1 0,1 1,2.2 0a1.1,1.1 0,1 1,-2.2 0" />
+    <path android:fillColor="#D84315" android:pathData="M12,21m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+    <path android:fillColor="#8D6E63" android:pathData="M9,20.2m-1.1,0a1.1,1.1 0,1 1,2.2 0a1.1,1.1 0,1 1,-2.2 0" />
+    <path android:fillColor="#D84315" android:pathData="M6.5,18.2m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+    <path android:fillColor="#8D6E63" android:pathData="M4.5,15.5m-1.1,0a1.1,1.1 0,1 1,2.2 0a1.1,1.1 0,1 1,-2.2 0" />
+    <path android:fillColor="#D84315" android:pathData="M3.8,12m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+    <path android:fillColor="#8D6E63" android:pathData="M4.2,8.5m-1.1,0a1.1,1.1 0,1 1,2.2 0a1.1,1.1 0,1 1,-2.2 0" />
+    <path android:fillColor="#D84315" android:pathData="M5.8,5.5m-1.2,0a1.2,1.2 0,1 1,2.4 0a1.2,1.2 0,1 1,-2.4 0" />
+    <path android:fillColor="#8D6E63" android:pathData="M8.5,3.3m-1.1,0a1.1,1.1 0,1 1,2.2 0a1.1,1.1 0,1 1,-2.2 0" />
+    <!-- Meru bead (larger, at bottom) -->
+    <path android:fillColor="#FF5722" android:pathData="M12,21.5m-1.5,0a1.5,1.5 0,1 1,3 0a1.5,1.5 0,1 1,-3 0" />
+    <!-- Tassel -->
+    <path
+        android:fillColor="#FF5722"
+        android:strokeColor="#D84315"
+        android:strokeWidth="0.3"
+        android:pathData="M11,22.5L12,23.5L13,22.5" />
+</vector>

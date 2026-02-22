@@ -1,0 +1,29 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FF6B00"
+        android:pathData="M24,2C11.85,2 2,11.85 2,24s9.85,22 22,22 22,-9.85 22,-22S36.15,2 24,2z"/>
+    <!-- Om symbol curves - stroke only, transparent fill -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M20,28c-3,0 -5,-2.5 -5,-5.5s2,-5.5 5,-5.5c1.5,0 3,0.7 4,2v-2c0,-3 -2,-5 -4.5,-5C16,12 13.5,14.5 13,18"/>
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:pathData="M24,19.5c0,4.5 -2,8 -5,8.5M24,19.5c0,4.5 2.5,8 5.5,7.5s4.5,-4 4.5,-7c0,-3.5 -2,-6.5 -5,-7"/>
+    <!-- Dot above -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,11m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0"/>
+    <!-- Modak (sweet) at bottom -->
+    <path
+        android:fillColor="#FFD54F"
+        android:pathData="M24,36m-4,0a4,3 0,1 1,8 0a4,3 0,1 1,-8 0"/>
+</vector>

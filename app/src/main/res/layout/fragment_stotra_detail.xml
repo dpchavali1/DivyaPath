@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar_stotra_detail"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/ic_back" android:background="@color/saffron_primary"
+            app:navigationIconTint="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingBottom="72dp" android:clipToPadding="false">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="16dp">
+
+            <TextView android:id="@+id/tv_stotra_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textSize="22sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+
+            <TextView android:id="@+id/tv_stotra_detail_title_hindi" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp" android:textSize="18sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="8dp" android:gravity="center_vertical">
+                <TextView android:id="@+id/tv_stotra_detail_verses" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="12sp" android:textColor="@color/white"
+                    android:background="@drawable/bg_circle_saffron" android:paddingHorizontal="10dp" android:paddingVertical="3dp"/>
+                <TextView android:id="@+id/tv_stotra_detail_duration" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp" android:textSize="13sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+            </LinearLayout>
+
+            <!-- Sanskrit text card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Sanskrit" android:textSize="14sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:id="@+id/tv_stotra_text_sanskrit" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:textSize="20sp" android:lineSpacingExtra="8dp"
+                        android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Hindi meaning card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Hindi Meaning" android:textSize="14sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:id="@+id/tv_stotra_text_hindi" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:textSize="16sp" android:lineSpacingExtra="6dp"
+                        android:textColor="?attr/colorOnSurface"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- English transliteration card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" app:cardCornerRadius="12dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="English Transliteration" android:textSize="14sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:id="@+id/tv_stotra_text_english" android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp" android:textSize="16sp" android:lineSpacingExtra="4dp"
+                        android:textColor="?attr/colorOnSurfaceVariant"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Audio player bar at bottom -->
+    <com.google.android.material.card.MaterialCardView android:id="@+id/audio_player_bar_stotra"
+        android:layout_width="match_parent" android:layout_height="56dp"
+        android:layout_gravity="bottom" android:layout_margin="8dp"
+        app:cardCornerRadius="28dp" app:cardElevation="6dp" app:cardBackgroundColor="@color/saffron_primary">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:gravity="center_vertical" android:paddingHorizontal="16dp">
+            <ImageButton android:id="@+id/btn_play_pause_stotra" android:layout_width="40dp" android:layout_height="40dp"
+                android:src="@drawable/ic_play" android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Listen" app:tint="@color/white"/>
+            <SeekBar android:id="@+id/seekbar_stotra" android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginHorizontal="8dp"
+                android:progressTint="@color/white" android:thumbTint="@color/gold_accent"/>
+            <TextView android:id="@+id/tv_duration_stotra" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:textColor="@color/white" android:textSize="12sp" android:text="0:00"/>
+            <TextView android:id="@+id/btn_speed_stotra" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="8dp" android:text="1x" android:textColor="@color/gold_accent"
+                android:textSize="12sp" android:fontFamily="sans-serif-medium" android:padding="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

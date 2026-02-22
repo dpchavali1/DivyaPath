@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.divyapath.app.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_homeFragment_to_aartiListFragment"
+            app:destination="@id/nav_aarti"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_aartiDetailFragment"
+            app:destination="@id/aartiDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_chalisaListFragment"
+            app:destination="@id/chalisaListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_pujaTierSelection"
+            app:destination="@id/pujaTierSelectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_festivalCountdown"
+            app:destination="@id/festivalCountdownFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_sevaFragment"
+            app:destination="@id/sevaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Aarti Tab (bottom nav destination) -->
+    <fragment
+        android:id="@+id/nav_aarti"
+        android:name="com.divyapath.app.ui.aarti.AartiListFragment"
+        android:label="Aarti Sangrah"
+        tools:layout="@layout/fragment_aarti_list">
+
+        <action
+            android:id="@+id/action_navAarti_to_aartiDetailFragment"
+            app:destination="@id/aartiDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aartiDetailFragment"
+        android:name="com.divyapath.app.ui.aarti.AartiDetailFragment"
+        android:label="Aarti"
+        tools:layout="@layout/fragment_aarti_detail">
+
+        <argument
+            android:name="contentId"
+            app:argType="integer"
+            android:defaultValue="1" />
+        <argument
+            android:name="isDeityId"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+
+    <!-- Chalisa -->
+    <fragment
+        android:id="@+id/chalisaListFragment"
+        android:name="com.divyapath.app.ui.chalisa.ChalisaListFragment"
+        android:label="Chalisa Sangrah"
+        tools:layout="@layout/fragment_chalisa_list">
+
+        <action
+            android:id="@+id/action_chalisaListFragment_to_chalisaDetailFragment"
+            app:destination="@id/chalisaDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/chalisaDetailFragment"
+        android:name="com.divyapath.app.ui.chalisa.ChalisaDetailFragment"
+        android:label="Chalisa"
+        tools:layout="@layout/fragment_chalisa_detail">
+
+        <argument
+            android:name="contentId"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+    <!-- Mantra Tab (bottom nav destination) -->
+    <fragment
+        android:id="@+id/nav_mantra"
+        android:name="com.divyapath.app.ui.mantra.MantraListFragment"
+        android:label="Mantra Jaap"
+        tools:layout="@layout/fragment_mantra_list">
+
+        <action
+            android:id="@+id/action_mantraListFragment_to_mantraDetailFragment"
+            app:destination="@id/mantraDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mantraDetailFragment"
+        android:name="com.divyapath.app.ui.mantra.MantraDetailFragment"
+        android:label="Mantra"
+        tools:layout="@layout/fragment_mantra_detail">
+
+        <argument
+            android:name="contentId"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+    <!-- Panchang Tab -->
+    <fragment
+        android:id="@+id/nav_panchang"
+        android:name="com.divyapath.app.ui.panchang.PanchangFragment"
+        android:label="Panchang"
+        tools:layout="@layout/fragment_panchang" />
+
+    <!-- More Tab -->
+    <fragment
+        android:id="@+id/nav_more"
+        android:name="com.divyapath.app.ui.more.MoreFragment"
+        android:label="More"
+        tools:layout="@layout/fragment_more">
+
+        <action
+            android:id="@+id/action_moreFragment_to_chalisaListFragment"
+            app:destination="@id/chalisaListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_darshanFragment"
+            app:destination="@id/darshanFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_storeFragment"
+            app:destination="@id/storeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_wallpaperFragment"
+            app:destination="@id/wallpaperFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_bhajanListFragment"
+            app:destination="@id/bhajanListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_stotraListFragment"
+            app:destination="@id/stotraListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_astrologyFragment"
+            app:destination="@id/astrologyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_shraddhaList"
+            app:destination="@id/shraddhaListFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_pujaTierSelection"
+            app:destination="@id/pujaTierSelectionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_japaCounter"
+            app:destination="@id/japaCounterFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_moreFragment_to_sevaFragment"
+            app:destination="@id/sevaFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <!-- Bhajan -->
+    <fragment
+        android:id="@+id/bhajanListFragment"
+        android:name="com.divyapath.app.ui.bhajan.BhajanListFragment"
+        android:label="Bhajan"
+        tools:layout="@layout/fragment_bhajan_list">
+
+        <action
+            android:id="@+id/action_bhajanList_to_bhajanDetail"
+            app:destination="@id/bhajanDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bhajanDetailFragment"
+        android:name="com.divyapath.app.ui.bhajan.BhajanDetailFragment"
+        android:label="Bhajan"
+        tools:layout="@layout/fragment_bhajan_detail">
+
+        <argument
+            android:name="contentId"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+    <!-- Stotra -->
+    <fragment
+        android:id="@+id/stotraListFragment"
+        android:name="com.divyapath.app.ui.stotra.StotraListFragment"
+        android:label="Stotra Sangrah"
+        tools:layout="@layout/fragment_stotra_list">
+
+        <action
+            android:id="@+id/action_stotraList_to_stotraDetail"
+            app:destination="@id/stotraDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/stotraDetailFragment"
+        android:name="com.divyapath.app.ui.stotra.StotraDetailFragment"
+        android:label="Stotra"
+        tools:layout="@layout/fragment_stotra_detail">
+
+        <argument
+            android:name="contentId"
+            app:argType="integer"
+            android:defaultValue="1" />
+    </fragment>
+
+    <!-- Darshan -->
+    <fragment
+        android:id="@+id/darshanFragment"
+        android:name="com.divyapath.app.ui.darshan.DarshanFragment"
+        android:label="Temple Darshan"
+        tools:layout="@layout/fragment_darshan" />
+
+    <fragment
+        android:id="@+id/templeDetailFragment"
+        android:name="com.divyapath.app.ui.darshan.TempleDetailFragment"
+        android:label="Temple Details"
+        tools:layout="@layout/fragment_temple_detail">
+
+        <argument
+            android:name="templeId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <!-- Store -->
+    <fragment
+        android:id="@+id/storeFragment"
+        android:name="com.divyapath.app.ui.store.StoreFragment"
+        android:label="Devotional Store"
+        tools:layout="@layout/fragment_store" />
+
+    <!-- Settings -->
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.divyapath.app.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <!-- Full-Screen Audio Player -->
+    <fragment
+        android:id="@+id/audioPlayerFragment"
+        android:name="com.divyapath.app.ui.player.AudioPlayerFragment"
+        android:label="Now Playing"
+        tools:layout="@layout/fragment_audio_player" />
+
+    <!-- Search -->
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.divyapath.app.ui.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <!-- Wallpaper -->
+    <fragment
+        android:id="@+id/wallpaperFragment"
+        android:name="com.divyapath.app.ui.wallpaper.WallpaperFragment"
+        android:label="Wallpapers"
+        tools:layout="@layout/fragment_wallpaper" />
+
+    <!-- Astrology -->
+    <fragment
+        android:id="@+id/astrologyFragment"
+        android:name="com.divyapath.app.ui.astrology.AstrologyFragment"
+        android:label="Rashifal"
+        tools:layout="@layout/fragment_astrology" />
+
+    <!-- Puja Flow -->
+    <fragment
+        android:id="@+id/pujaTierSelectionFragment"
+        android:name="com.divyapath.app.ui.puja.PujaTierSelectionFragment"
+        android:label="Guided Puja"
+        tools:layout="@layout/fragment_puja_tier_selection">
+
+        <action
+            android:id="@+id/action_pujaTierSelection_to_pujaFlow"
+            app:destination="@id/pujaFlowFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pujaFlowFragment"
+        android:name="com.divyapath.app.ui.puja.PujaFlowFragment"
+        android:label="Puja"
+        tools:layout="@layout/fragment_puja_flow">
+
+        <argument
+            android:name="deityName"
+            app:argType="string"
+            android:defaultValue="Lord Ganesha" />
+        <argument
+            android:name="tier"
+            app:argType="string"
+            android:defaultValue="quick" />
+    </fragment>
+
+    <!-- Festival Countdown -->
+    <fragment
+        android:id="@+id/festivalCountdownFragment"
+        android:name="com.divyapath.app.ui.festival.FestivalCountdownFragment"
+        android:label="Festival Prep"
+        tools:layout="@layout/fragment_festival_countdown">
+
+        <argument
+            android:name="festivalName"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="daysRemaining"
+            app:argType="integer"
+            android:defaultValue="7" />
+    </fragment>
+
+    <!-- Shraddha Calendar -->
+    <fragment
+        android:id="@+id/shraddhaListFragment"
+        android:name="com.divyapath.app.ui.shraddha.ShraddhaListFragment"
+        android:label="Shraddha Calendar"
+        tools:layout="@layout/fragment_shraddha_list">
+
+        <action
+            android:id="@+id/action_shraddhaList_to_shraddhaForm"
+            app:destination="@id/shraddhaFormFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shraddhaFormFragment"
+        android:name="com.divyapath.app.ui.shraddha.ShraddhaFormFragment"
+        android:label="Add Remembrance"
+        tools:layout="@layout/fragment_shraddha_form">
+
+        <argument
+            android:name="shraddhaId"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+
+    <!-- Japa Counter -->
+    <fragment
+        android:id="@+id/japaCounterFragment"
+        android:name="com.divyapath.app.ui.japa.JapaCounterFragment"
+        android:label="Japa Counter"
+        tools:layout="@layout/fragment_japa_counter" />
+
+    <!-- Seva -->
+    <fragment
+        android:id="@+id/sevaFragment"
+        android:name="com.divyapath.app.ui.seva.SevaFragment"
+        android:label="Daily Seva"
+        tools:layout="@layout/fragment_seva" />
+
+</navigation>

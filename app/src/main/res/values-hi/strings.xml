@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">दिव्यपथ</string>
+    <string name="app_tagline">आपका आध्यात्मिक साथी</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">होम</string>
+    <string name="nav_aarti">आरती</string>
+    <string name="nav_mantra">मंत्र</string>
+    <string name="nav_panchang">पंचांग</string>
+    <string name="nav_more">अधिक</string>
+
+    <!-- Greetings -->
+    <string name="greeting_morning">सुप्रभात</string>
+    <string name="greeting_afternoon">नमस्कार</string>
+    <string name="greeting_evening">शुभ संध्या</string>
+    <string name="greeting_night">शुभ रात्रि</string>
+    <string name="greeting_default">नमस्ते</string>
+    <string name="greeting_user_default">भक्त</string>
+
+    <!-- Home Screen -->
+    <string name="todays_panchang">आज का पंचांग</string>
+    <string name="todays_deity">आज के देवता</string>
+    <string name="daily_shloka">आज का श्लोक</string>
+    <string name="todays_aartis">आज की आरतियाँ</string>
+    <string name="quick_access">त्वरित पहुँच</string>
+    <string name="view_all">सभी देखें</string>
+    <string name="btn_aarti">आरती</string>
+    <string name="btn_chalisa">चालीसा</string>
+    <string name="btn_mantra">मंत्र</string>
+    <string name="btn_calendar">कैलेंडर</string>
+
+    <!-- Panchang Labels -->
+    <string name="tithi">तिथि</string>
+    <string name="nakshatra">नक्षत्र</string>
+    <string name="yoga">योग</string>
+    <string name="karana">करण</string>
+    <string name="vara">वार</string>
+    <string name="sunrise">सूर्योदय</string>
+    <string name="sunset">सूर्यास्त</string>
+    <string name="moonrise">चंद्रोदय</string>
+    <string name="moonset">चंद्रास्त</string>
+    <string name="rahukaal">राहुकाल</string>
+    <string name="gulikaal">गुलिका काल</string>
+    <string name="yamghant">यमघंट</string>
+    <string name="abhijit_muhurat">अभिजित मुहूर्त</string>
+
+    <!-- Days -->
+    <string name="monday">सोमवार</string>
+    <string name="tuesday">मंगलवार</string>
+    <string name="wednesday">बुधवार</string>
+    <string name="thursday">गुरुवार</string>
+    <string name="friday">शुक्रवार</string>
+    <string name="saturday">शनिवार</string>
+    <string name="sunday">रविवार</string>
+
+    <!-- Deity Names -->
+    <string name="deity_shiva">भगवान शिव</string>
+    <string name="deity_hanuman">हनुमान जी</string>
+    <string name="deity_ganesha">श्री गणेश</string>
+    <string name="deity_vishnu">भगवान विष्णु</string>
+    <string name="deity_lakshmi">माँ लक्ष्मी</string>
+    <string name="deity_saturn">शनि देव</string>
+    <string name="deity_surya">सूर्य देव</string>
+    <string name="deity_durga">माँ दुर्गा</string>
+    <string name="deity_krishna">श्री कृष्ण</string>
+    <string name="deity_saraswati">माँ सरस्वती</string>
+    <string name="deity_rama">श्री राम</string>
+
+    <!-- Aarti Section -->
+    <string name="aarti_section_title">आरती संग्रह</string>
+    <string name="font_size">अक्षर का आकार</string>
+    <string name="share">शेयर करें</string>
+    <string name="bookmark">बुकमार्क</string>
+    <string name="bookmarked">बुकमार्क किया</string>
+    <string name="play">चलाएँ</string>
+    <string name="pause">रोकें</string>
+
+    <!-- Chalisa Section -->
+    <string name="chalisa_section_title">चालीसा संग्रह</string>
+    <string name="auto_scroll">स्वतः स्क्रॉल</string>
+    <string name="doha">दोहा</string>
+    <string name="chaupai">चौपाई</string>
+
+    <!-- Mantra Section -->
+    <string name="mantra_section_title">मंत्र जाप</string>
+    <string name="mala_counter">माला काउंटर</string>
+    <string name="mala_complete">माला पूर्ण!</string>
+    <string name="reset_counter">रीसेट करें</string>
+    <string name="sanskrit">संस्कृत</string>
+    <string name="meaning">अर्थ</string>
+    <string name="benefits">लाभ</string>
+    <string name="transliteration">उच्चारण</string>
+
+    <!-- Mantra Categories -->
+    <string name="cat_ganesh_mantras">गणेश मंत्र</string>
+    <string name="cat_shiva_mantras">शिव मंत्र</string>
+    <string name="cat_vedic_mantras">वैदिक मंत्र</string>
+    <string name="cat_beej_mantras">बीज मंत्र</string>
+    <string name="cat_navgraha_mantras">नवग्रह मंत्र</string>
+
+    <!-- Panchang -->
+    <string name="panchang_title">पंचांग</string>
+    <string name="monthly_calendar">मासिक कैलेंडर</string>
+    <string name="festivals_this_month">इस माह के त्योहार</string>
+    <string name="shubh_timing">शुभ समय</string>
+    <string name="ashubh_timing">अशुभ समय</string>
+
+    <!-- Temple Darshan -->
+    <string name="darshan_title">मंदिर दर्शन</string>
+    <string name="live_darshan">लाइव दर्शन</string>
+    <string name="darshan_timings">दर्शन समय</string>
+    <string name="plan_visit">यात्रा की योजना</string>
+    <string name="status_open">खुला</string>
+    <string name="status_closed">बंद</string>
+
+    <!-- Store -->
+    <string name="store_title">पूजा सामग्री</string>
+    <string name="buy_on_amazon">Amazon पर खरीदें</string>
+    <string name="category_incense">अगरबत्ती</string>
+    <string name="category_diyas">दीये</string>
+    <string name="category_idols">मूर्तियाँ</string>
+    <string name="category_puja_thali">पूजा थाली</string>
+    <string name="category_books">पुस्तकें</string>
+    <string name="category_rudraksha">रुद्राक्ष</string>
+
+    <!-- Settings -->
+    <string name="settings_title">सेटिंग्स</string>
+    <string name="settings_user_name">आपका नाम</string>
+    <string name="settings_user_name_hint">अपना नाम दर्ज करें</string>
+    <string name="settings_language">भाषा</string>
+    <string name="settings_morning_notification">सुबह की सूचना</string>
+    <string name="settings_evening_notification">शाम की सूचना</string>
+    <string name="settings_notification_time">सूचना का समय</string>
+    <string name="settings_font_size">अक्षर का आकार</string>
+    <string name="settings_theme">थीम</string>
+    <string name="settings_profile">प्रोफाइल</string>
+    <string name="settings_devotional_voice">भक्ति स्वर</string>
+    <string name="settings_voice_female">महिला आवाज़ (स्पष्ट)</string>
+    <string name="settings_voice_male">पुरुष आवाज़ (गंभीर)</string>
+    <string name="settings_aarti_playback">आरती प्लेबैक</string>
+    <string name="settings_playback_auto">ऑटो (उपलब्ध हो तो गायन)</string>
+    <string name="settings_playback_sing">गायन (केवल ऑडियो)</string>
+    <string name="settings_playback_read">पाठ (TTS आवाज़)</string>
+    <string name="settings_audio_quality">ऑडियो गुणवत्ता</string>
+    <string name="settings_quality_low">कम (डेटा बचत)</string>
+    <string name="settings_quality_medium">मध्यम (अनुशंसित)</string>
+    <string name="settings_quality_high">उच्च (श्रेष्ठ गुणवत्ता)</string>
+    <string name="settings_reading_font_size">पाठ आकार</string>
+    <string name="settings_font_preview_text">ॐ नमः शिवाय</string>
+    <string name="settings_notifications">सूचनाएँ</string>
+    <string name="settings_daily_morning_reminder">दैनिक सुबह स्मरण</string>
+    <string name="settings_festival_evening_alerts">त्योहार और संध्या अलर्ट</string>
+    <string name="settings_panchang_location">पंचांग स्थान</string>
+    <string name="settings_panchang_location_hint">सही सूर्योदय, सूर्यास्त और मुहूर्त समय के लिए उपयोग किया जाता है</string>
+    <string name="settings_location_city">शहर</string>
+    <string name="settings_location_gps">जीपीएस</string>
+    <string name="settings_location_manual">मैनुअल</string>
+    <string name="settings_apply">लागू करें</string>
+    <string name="settings_timezone_display">समय क्षेत्र प्रदर्शन</string>
+    <string name="settings_timezone_local">स्थानीय</string>
+    <string name="settings_timezone_ist">IST</string>
+    <string name="settings_timezone_device">डिवाइस</string>
+    <string name="settings_location_preview_default">नई दिल्ली, IN</string>
+    <string name="settings_timezone_preview_default">Asia/Kolkata (IST)</string>
+    <string name="settings_preview_sunrise_default">सूर्योदय: --</string>
+    <string name="settings_preview_sunset_default">सूर्यास्त: --</string>
+    <string name="settings_preview_rahukaal_default">राहुकाल: --</string>
+    <string name="settings_about_section">जानकारी</string>
+    <string name="settings_rate_play_store">Play Store पर रेट करें</string>
+    <string name="settings_share_with_friends">दोस्तों के साथ ऐप साझा करें</string>
+    <string name="settings_footer_text">DivyaPath v2.0\nभक्ति से निर्मित</string>
+    <string name="settings_about">DivyaPath के बारे में</string>
+    <string name="settings_rate">रेटिंग दें</string>
+    <string name="settings_share_app">ऐप शेयर करें</string>
+    <string name="settings_privacy">गोपनीयता नीति</string>
+    <string name="theme_light">लाइट</string>
+    <string name="theme_dark">डार्क</string>
+    <string name="theme_saffron">केसरिया</string>
+
+    <!-- Common -->
+    <string name="loading">लोड हो रहा है…</string>
+    <string name="error_loading">सामग्री लोड करने में असमर्थ</string>
+    <string name="retry">पुनः प्रयास करें</string>
+    <string name="ok">ठीक है</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="om_symbol">ॐ</string>
+</resources>

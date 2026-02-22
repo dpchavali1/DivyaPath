@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="?attr/colorSurface">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar_mantra"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        app:title="Mantra Jaap" app:titleTextColor="@color/white"
+        android:background="@color/saffron_primary"/>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:scrollbars="none" android:paddingVertical="8dp">
+        <com.google.android.material.chip.ChipGroup android:id="@+id/chip_group_categories"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:paddingHorizontal="12dp" app:singleSelection="true"/>
+    </HorizontalScrollView>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_mantra_list"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp" android:clipToPadding="false"/>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_banner_mantra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-4962910048695842/2672343176"/>
+</LinearLayout>

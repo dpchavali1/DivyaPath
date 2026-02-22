@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="?attr/colorSurface">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar_search"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        app:title="Search" app:titleTextColor="@color/white"
+        android:background="@color/saffron_primary" app:navigationIcon="@drawable/ic_back" app:navigationIconTint="@color/white"/>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp" android:layout_marginTop="8dp"
+        app:cardCornerRadius="12dp" app:cardElevation="1dp" app:strokeWidth="0dp">
+        <androidx.appcompat.widget.SearchView android:id="@+id/search_view"
+            android:layout_width="match_parent" android:layout_height="44dp"
+            app:queryHint="Search aarti, chalisa, mantra..."
+            app:iconifiedByDefault="false" app:searchIcon="@drawable/ic_search"/>
+    </com.google.android.material.card.MaterialCardView>
+    <TextView android:id="@+id/tv_search_hint" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:layout_marginStart="16dp" android:text="Popular Searches"
+        android:textSize="14sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+    <com.google.android.material.chip.ChipGroup android:id="@+id/chip_popular"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="12dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_search_results"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:padding="12dp" android:clipToPadding="false" android:visibility="gone"/>
+    <TextView android:id="@+id/tv_no_results" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:layout_marginTop="48dp" android:text="No results found"
+        android:textSize="16sp" android:textColor="?attr/colorOnSurfaceVariant" android:visibility="gone"/>
+</LinearLayout>

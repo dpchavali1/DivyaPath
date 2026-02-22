@@ -1,0 +1,44 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,2C11.85,2 2,11.85 2,24s9.85,22 22,22 22,-9.85 22,-22S36.15,2 24,2z"/>
+    <path
+        android:fillColor="#E8EAF6"
+        android:pathData="M24,4C12.95,4 4,12.95 4,24s8.95,20 20,20 20,-8.95 20,-20S35.05,4 24,4z"/>
+    <!-- Veena (stringed instrument) - Saraswati's symbol -->
+    <!-- Veena body -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M14,32m-5,0a5,4 0,1 1,10 0a5,4 0,1 1,-10 0"/>
+    <path
+        android:fillColor="#6D4C41"
+        android:pathData="M14,32m-3,0a3,2.5 0,1 1,6 0a3,2.5 0,1 1,-6 0"/>
+    <!-- Veena neck -->
+    <path
+        android:fillColor="#8D6E63"
+        android:strokeColor="#6D4C41"
+        android:strokeWidth="0.5"
+        android:pathData="M18,30L34,14l1.5,1.5L19.5,31.5z"/>
+    <!-- Veena head -->
+    <path
+        android:fillColor="#8D6E63"
+        android:pathData="M34,14m-3,0a3,3 0,1 1,6 0a3,3 0,1 1,-6 0"/>
+    <!-- Strings -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFD54F"
+        android:strokeWidth="0.5"
+        android:pathData="M14,29L34,12M14,30L34,13"/>
+    <!-- Book (knowledge) -->
+    <path
+        android:fillColor="#5C6BC0"
+        android:pathData="M28,34l-4,-1 -4,1v6l4,-1 4,1z"/>
+    <path
+        android:fillColor="#7986CB"
+        android:pathData="M24,33v6"/>
+</vector>

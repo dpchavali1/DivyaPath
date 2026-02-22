@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors -->
+    <color name="saffron">#FF6B00</color>
+    <color name="saffron_dark">#E55D00</color>
+    <color name="saffron_light">#FF8C33</color>
+    <color name="saffron_50">#FFF3E0</color>
+    <color name="saffron_100">#FFE0B2</color>
+    <color name="saffron_200">#FFCC80</color>
+
+    <!-- Gold -->
+    <color name="gold">#FFD700</color>
+    <color name="gold_dark">#FFC107</color>
+    <color name="gold_light">#FFE44D</color>
+
+    <!-- Cream / Background -->
+    <color name="cream">#FFF8E7</color>
+    <color name="cream_dark">#FFF0D0</color>
+    <color name="cream_light">#FFFDF7</color>
+
+    <!-- Deep Maroon / Accent -->
+    <color name="deep_maroon">#8B0000</color>
+    <color name="maroon_dark">#5C0000</color>
+    <color name="maroon_light">#B71C1C</color>
+
+    <!-- Material Design 3 Theme Colors -->
+    <color name="md_theme_light_primary">#FF6B00</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#FFE0B2</color>
+    <color name="md_theme_light_onPrimaryContainer">#331500</color>
+    <color name="md_theme_light_secondary">#8B0000</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#FFDAD6</color>
+    <color name="md_theme_light_onSecondaryContainer">#410002</color>
+    <color name="md_theme_light_tertiary">#FFD700</color>
+    <color name="md_theme_light_onTertiary">#3E2E00</color>
+    <color name="md_theme_light_tertiaryContainer">#FFF0C0</color>
+    <color name="md_theme_light_onTertiaryContainer">#231A00</color>
+    <color name="md_theme_light_background">#FFF8E7</color>
+    <color name="md_theme_light_onBackground">#1C1B1F</color>
+    <color name="md_theme_light_surface">#FFF8E7</color>
+    <color name="md_theme_light_onSurface">#1C1B1F</color>
+    <color name="md_theme_light_surfaceVariant">#FFF0D0</color>
+    <color name="md_theme_light_onSurfaceVariant">#49454F</color>
+    <color name="md_theme_light_outline">#7A757F</color>
+    <color name="md_theme_light_error">#B3261E</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="md_theme_dark_primary">#FFB380</color>
+    <color name="md_theme_dark_onPrimary">#4D2600</color>
+    <color name="md_theme_dark_primaryContainer">#803C00</color>
+    <color name="md_theme_dark_onPrimaryContainer">#FFE0B2</color>
+    <color name="md_theme_dark_secondary">#FFB4AB</color>
+    <color name="md_theme_dark_onSecondary">#690005</color>
+    <color name="md_theme_dark_secondaryContainer">#93000A</color>
+    <color name="md_theme_dark_onSecondaryContainer">#FFDAD6</color>
+    <color name="md_theme_dark_background">#1A0A00</color>
+    <color name="md_theme_dark_onBackground">#E6E1E5</color>
+    <color name="md_theme_dark_surface">#1A0A00</color>
+    <color name="md_theme_dark_onSurface">#E6E1E5</color>
+    <color name="md_theme_dark_surfaceVariant">#2D1A0A</color>
+    <color name="md_theme_dark_onSurfaceVariant">#CAC4D0</color>
+    <color name="md_theme_dark_outline">#938F99</color>
+    <color name="md_theme_dark_error">#F2B8B5</color>
+    <color name="md_theme_dark_onError">#601410</color>
+
+    <!-- Utility Colors -->
+    <color name="rahukaal_red">#D32F2F</color>
+    <color name="shubh_green">#2E7D32</color>
+    <color name="abhijit_green">#43A047</color>
+    <color name="text_primary">#1C1B1F</color>
+    <color name="text_secondary">#49454F</color>
+    <color name="text_hint">#7A757F</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="overlay_dark">#80000000</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="shimmer_base">#E0E0E0</color>
+    <color name="shimmer_highlight">#F5F5F5</color>
+
+    <!-- Aliases used across layouts -->
+    <color name="saffron_primary">#FF6B00</color>
+    <color name="gold_accent">#FFD700</color>
+    <color name="cream_background">#FFF8E7</color>
+    <color name="error_red">#D32F2F</color>
+    <color name="success_green">#2E7D32</color>
+
+    <!-- Panchang Insight Card Backgrounds -->
+    <color name="insight_do_bg">#E8F5E9</color>
+    <color name="insight_avoid_bg">#FFEBEE</color>
+</resources>

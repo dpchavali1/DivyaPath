@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <!-- Panchang Card -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp" app:cardElevation="2dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView android:id="@+id/tv_today_date" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="18sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                <TextView android:id="@+id/tv_today_vara" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:layout_marginVertical="12dp" android:background="?attr/colorOutlineVariant"/>
+                <TextView android:text="Panchamga" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="16sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:columnCount="2" android:layout_marginTop="8dp" android:useDefaultMargins="true">
+                    <TextView android:text="Tithi" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_tithi" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:text="Nakshatra" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_nakshatra" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:text="Yoga" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_yoga" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:text="Karana" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_karana" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                </GridLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!-- Sun & Moon Card -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" app:cardCornerRadius="16dp" app:cardElevation="2dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView android:text="Sun &amp; Moon" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="16sp" android:textColor="@color/saffron_primary" android:fontFamily="sans-serif-medium"/>
+                <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:columnCount="2" android:layout_marginTop="8dp" android:useDefaultMargins="true">
+                    <TextView android:text="Sunrise" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_sunrise" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:text="Sunset" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_sunset" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:text="Moonrise" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_moonrise" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:text="Moonset" android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                    <TextView android:id="@+id/tv_moonset" android:textSize="14sp" android:textColor="?attr/colorOnSurface" android:fontFamily="sans-serif-medium"/>
+                </GridLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <!-- Auspicious/Inauspicious Timings Card -->
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" app:cardCornerRadius="16dp" app:cardElevation="2dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView android:text="Auspicious Timings" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="16sp" android:textColor="@color/success_green" android:fontFamily="sans-serif-medium"/>
+                <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:columnCount="2" android:layout_marginTop="8dp" android:useDefaultMargins="true">
+                    <TextView android:text="Abhijit" android:textSize="14sp" android:textColor="@color/success_green"/>
+                    <TextView android:id="@+id/tv_abhijit" android:textSize="14sp" android:textColor="@color/success_green" android:fontFamily="sans-serif-medium"/>
+                </GridLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:layout_marginVertical="12dp" android:background="?attr/colorOutlineVariant"/>
+                <TextView android:text="Inauspicious Timings" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:textSize="16sp" android:textColor="@color/error_red" android:fontFamily="sans-serif-medium"/>
+                <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:columnCount="2" android:layout_marginTop="8dp" android:useDefaultMargins="true">
+                    <TextView android:text="Rahukaal" android:textSize="14sp" android:textColor="@color/error_red"/>
+                    <TextView android:id="@+id/tv_rahukaal" android:textSize="14sp" android:textColor="@color/error_red" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:text="Gulikaal" android:textSize="14sp" android:textColor="@color/error_red"/>
+                    <TextView android:id="@+id/tv_gulikaal" android:textSize="14sp" android:textColor="@color/error_red" android:fontFamily="sans-serif-medium"/>
+                    <TextView android:text="Yamghant" android:textSize="14sp" android:textColor="@color/error_red"/>
+                    <TextView android:id="@+id/tv_yamghant" android:textSize="14sp" android:textColor="@color/error_red" android:fontFamily="sans-serif-medium"/>
+                </GridLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

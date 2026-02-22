@@ -1,0 +1,36 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Background circle -->
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M24,2C11.85,2 2,11.85 2,24s9.85,22 22,22 22,-9.85 22,-22S36.15,2 24,2z"/>
+    <!-- Bow (Dhanush) - Rama's symbol -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFD54F"
+        android:strokeWidth="2.5"
+        android:pathData="M14,36C10,28 10,18 14,10"/>
+    <!-- Bowstring -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1"
+        android:pathData="M14,10L14,36"/>
+    <!-- Arrow -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.5"
+        android:pathData="M14,23H38"/>
+    <!-- Arrowhead -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M38,23l-4,-2.5v5z"/>
+    <!-- Arrow feathers -->
+    <path
+        android:fillColor="#81C784"
+        android:pathData="M14,23l-3,-3v3zM14,23l-3,3v-3z"/>
+</vector>

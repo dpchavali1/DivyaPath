@@ -1,0 +1,30 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M24,2C11.85,2 2,11.85 2,24s9.85,22 22,22 22,-9.85 22,-22S36.15,2 24,2z"/>
+    <!-- Sun rays - stroke only -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FFF176"
+        android:strokeWidth="2.5"
+        android:pathData="M24,6V12M24,36V42M6,24H12M36,24H42M11.3,11.3L15.5,15.5M32.5,32.5L36.7,36.7M36.7,11.3L32.5,15.5M15.5,32.5L11.3,36.7"/>
+    <!-- Sun center -->
+    <path
+        android:fillColor="#FFEE58"
+        android:pathData="M24,14m-10,0a10,10 0,1 1,20 0a10,10 0,1 1,-20 0"/>
+    <path
+        android:fillColor="#FFD600"
+        android:pathData="M24,14m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0"/>
+    <!-- Face features -->
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M20.5,21m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+    <path
+        android:fillColor="#FF8F00"
+        android:pathData="M27.5,21m-1,0a1,1 0,1 1,2 0a1,1 0,1 1,-2 0"/>
+</vector>
