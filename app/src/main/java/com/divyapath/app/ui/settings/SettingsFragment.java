@@ -85,7 +85,6 @@ public class SettingsFragment extends Fragment {
         prefs = new PreferenceManager(requireContext());
 
         bindUserSettings();
-        bindVoiceSettings();
         bindPlaybackSettings();
         bindAudioQualitySettings();
         bindFontSizeSettings();
@@ -124,22 +123,6 @@ public class SettingsFragment extends Fragment {
                 androidx.work.WorkManager.getInstance(requireContext()).cancelUniqueWork("evening_reminder");
             }
             // Festival alerts are always active — independent of evening toggle
-        });
-    }
-
-    private void bindVoiceSettings() {
-        if (PreferenceManager.VOICE_MALE.equals(prefs.getVoiceGender())) {
-            binding.rbMale.setChecked(true);
-        } else {
-            binding.rbFemale.setChecked(true);
-        }
-
-        binding.rgVoice.setOnCheckedChangeListener((group, checkedId) -> {
-            if (checkedId == binding.rbMale.getId()) {
-                prefs.setVoiceGender(PreferenceManager.VOICE_MALE);
-            } else if (checkedId == binding.rbFemale.getId()) {
-                prefs.setVoiceGender(PreferenceManager.VOICE_FEMALE);
-            }
         });
     }
 

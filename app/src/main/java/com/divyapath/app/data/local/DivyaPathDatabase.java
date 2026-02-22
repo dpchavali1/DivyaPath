@@ -12,6 +12,7 @@ public abstract class DivyaPathDatabase extends RoomDatabase {
     public abstract BhajanDao bhajanDao(); public abstract StotraDao stotraDao();
     public abstract ShraddhaDao shraddhaDao();
     private static volatile DivyaPathDatabase INSTANCE;
+    private static volatile boolean seedQueued = false;
     public static final ExecutorService databaseWriteExecutor = Executors.newFixedThreadPool(4);
     public static DivyaPathDatabase getDatabase(final Context context) {
         if (INSTANCE==null) { synchronized(DivyaPathDatabase.class) { if (INSTANCE==null) {
@@ -106,14 +107,12 @@ public abstract class DivyaPathDatabase extends RoomDatabase {
     private static final Callback sCallback = new Callback() {
         @Override public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
+            seedQueued = true;
             databaseWriteExecutor.execute(() -> { if(INSTANCE!=null) DatabaseSeeder.seedDatabase(INSTANCE); });
         }
         @Override public void onDestructiveMigration(@NonNull SupportSQLiteDatabase db) {
             super.onDestructiveMigration(db);
-            // onCreate will not fire after destructive migration, so seed here.
-            // Do NOT also seed in onOpen — that causes a race condition where both
-            // onDestructiveMigration and onOpen queue seeds before either executes,
-            // resulting in duplicate entries.
+            seedQueued = true;
             databaseWriteExecutor.execute(() -> { if(INSTANCE!=null) DatabaseSeeder.seedDatabase(INSTANCE); });
         }
         @Override public void onOpen(@NonNull SupportSQLiteDatabase db) {
@@ -128,8 +127,9 @@ public abstract class DivyaPathDatabase extends RoomDatabase {
                 db.execSQL("DELETE FROM stotras WHERE id NOT IN (SELECT MIN(id) FROM stotras GROUP BY title)");
                 db.execSQL("DELETE FROM temples WHERE id NOT IN (SELECT MIN(id) FROM temples GROUP BY name)");
             } catch (Exception ignored) {}
-            // Seed only if deities table is empty AND no seed is already queued.
-            // Always backfill Archive.org audio URLs for all content types.
+            // Skip if onCreate/onDestructiveMigration already queued a seed
+            if (seedQueued) { seedQueued = false; return; }
+            // For existing installs: backfill audio URLs
             databaseWriteExecutor.execute(() -> {
                 if (INSTANCE != null) {
                     if (INSTANCE.deityDao().getCount() == 0) {

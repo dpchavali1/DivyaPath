@@ -35,15 +35,6 @@
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
                 android:orientation="vertical" android:padding="16dp">
 
-                <TextView android:text="@string/settings_devotional_voice" android:textSize="16sp" android:textColor="@color/saffron_primary"
-                    android:fontFamily="sans-serif-medium" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
-                <RadioGroup android:id="@+id/rg_voice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
-                    <RadioButton android:id="@+id/rb_female" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_voice_female"/>
-                    <RadioButton android:id="@+id/rb_male" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_voice_male"/>
-                </RadioGroup>
-
-                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginVertical="16dp" android:background="?attr/colorOutlineVariant"/>
-
                 <TextView android:text="@string/settings_aarti_playback" android:textSize="16sp" android:textColor="@color/saffron_primary"
                     android:fontFamily="sans-serif-medium" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
                 <RadioGroup android:id="@+id/rg_aarti_playback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
